@@ -47,7 +47,7 @@
     }
 
     .brand-detail-explain {
-        margin-left: 100px;
+        /* margin-left: 50px; */
     }
 
     .brand-detail-explain::before {
@@ -57,7 +57,7 @@
         background-color: var(--accent-color);
         position: absolute;
         top: 0;
-        left: -2%;
+        left: 5%;
     }
 
     h3 {
@@ -220,7 +220,6 @@
         border-bottom: 0.1px solid rgb(255,255,255,0.5);
     }
 
-
     .mobile-header > a {
         width: 120px;
     }
@@ -229,7 +228,6 @@
         display: flex;
         flex-direction: column;
     }
-
 
     .mobile-header-icon > a {
         display: block;
@@ -291,8 +289,13 @@
     }
 
     .brand-explain {
-        padding: 60px;
+        padding: 60px 30px;
         width: 100%;
+        box-sizing: border-box;
+    }
+
+    .brand-detail-explain {
+        padding-left: 50px;
         box-sizing: border-box;
     }
 
@@ -410,6 +413,9 @@
   }
 
 
+
+
+
   @media screen and (max-width: 360px) {
 
     #showroom::after {
@@ -418,10 +424,14 @@
         right: 3%;
     }
 
-    .brand-detail-explain::before {
+    /* .brand-detail-explain::before {
         top: 0;
         left: 3%;
 
+    } */
+
+    .brand-explain {
+        padding: 20px 0;
     }
 
   }
