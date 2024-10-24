@@ -46,6 +46,10 @@
         width: 300px;
     }
 
+    .brand-detail-explain {
+        margin-left: 100px;
+    }
+
     .brand-detail-explain::before {
         content: '';
         height: 260px;
@@ -226,14 +230,15 @@
         flex-direction: column;
     }
 
+
     .mobile-header-icon > a {
         display: block;
         width: 24px;
         aspect-ratio: 1;
         padding: 5px;
     }
-
-    body > section {
+    
+    .about {
         padding: 0 16px;
     }
 
@@ -273,6 +278,7 @@
 
     .brand-explain {
         gap: 60px;
+        width: 100%;
     }
 
     h3 {
@@ -281,10 +287,17 @@
 
     .brand-explain-content {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .brand-explain {
+        padding: 60px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .brand-explain-content figure {
-        width: 350px;
+        width: 100%;
     }
 
     #showroom::before {
@@ -308,7 +321,7 @@
         position: absolute;
         bottom: 18%;
         /* left: -100px; */
-        right: 20%;
+        right: 5%;
         /* 이미지 수정 */
         z-index: -1;
         background-image: url(../img/showroom\ 나뭇잎.png);
@@ -399,16 +412,30 @@
 
   @media screen and (max-width: 360px) {
 
+    #showroom::after {
+        width: 150px;
+        bottom: 20%;
+        right: 3%;
+    }
+
+    .brand-detail-explain::before {
+        top: 0;
+        left: 3%;
+
+    }
 
   }
 
 
 
   /*호버넣기 
-  about us  이미지 더 찾기
+  about us  이미지 더 찾기 0
    */
 
-   /* about us부분 작아질 때 글씨내려가는거 */
-   /* with furniture부분 2개씩 */
-   /* 캐러셀 정리 */
+   /* about us부분 작아질 때 글씨내려가는거
+   br 에 class줘서 display none-반응형때 block하기 */
+
    /* 헤더 햄버거 내려오는거하기 */
+
+   /* showroom부분 가운데 정렬하기
+   more - div?q박스에 text aline, 나뭇잎정리 */

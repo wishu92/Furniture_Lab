@@ -74,6 +74,7 @@ nav li:last-child {
 
 a {
     text-decoration: none;
+    color: #444;
 }
 
 .mobile-header {
@@ -172,7 +173,7 @@ h2 {
 }
 
 .brand-explain {
-    height: 100vh;
+    /* height: 100vh; */
     max-width: 1200px;
     margin: 0 auto;
 
@@ -306,6 +307,7 @@ h6 {
 #showroom {
     padding: 100px 32px;
     position: relative;
+    overflow: hidden;
 }
 
 #showroom::before {
