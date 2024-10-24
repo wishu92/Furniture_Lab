@@ -47,7 +47,7 @@
     }
 
     .brand-detail-explain {
-        /* margin-left: 50px; */
+        margin-left: 30px;
     }
 
     .brand-detail-explain::before {
@@ -57,11 +57,11 @@
         background-color: var(--accent-color);
         position: absolute;
         top: 0;
-        left: 5%;
+        left: -2%;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .brand-summary p:first-child {
@@ -294,11 +294,6 @@
         box-sizing: border-box;
     }
 
-    .brand-detail-explain {
-        padding-left: 50px;
-        box-sizing: border-box;
-    }
-
     .brand-explain-content figure {
         width: 100%;
     }
@@ -413,8 +408,27 @@
   }
 
 
+  @media screen and (max-width: 480px) {
+    .brand-detail-explain {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 
-
+    .aboutus-title-spacing {
+        display: none;
+    }
+    
+    .spacing {
+        display: block;
+    }   
+        
+    .brand-detail-explain::before {
+        display: none;
+    }
+        
+        
+    }
 
   @media screen and (max-width: 360px) {
 
@@ -424,15 +438,10 @@
         right: 3%;
     }
 
-    /* .brand-detail-explain::before {
-        top: 0;
-        left: 3%;
-
-    } */
-
+/* 
     .brand-explain {
-        padding: 20px 0;
-    }
+        padding: 60px 0;
+    } */
 
   }
 

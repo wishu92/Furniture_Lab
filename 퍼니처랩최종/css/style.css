@@ -219,7 +219,7 @@ h2 {
 h3 {
     font-size: 30px;
     font-weight: bold;
-    color: #222;
+    color: #333;
 }
 
 .brand-summary {
@@ -227,7 +227,7 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    padding: 60px 0;
+    padding: 40px 0;
     gap: 20px;
 
 }
@@ -241,7 +241,17 @@ h3 {
 .brand-summary p:last-child {
     font-size: 18px;
     color:#222;
+    line-height: 25px;
 }
+
+.aboutus-title-spacing {
+    display: block;
+}
+
+.spacing {
+    display: none;
+}
+
 
 #our-best-seller {
     max-width: 1200px;
