@@ -80,10 +80,6 @@
         font-size: 16px;
     }
     
-    /* .best-seller-furniture-name p {
-        font-size: 12px;
-    } */
-
     h2 {
         font-size: 34px;
     }
@@ -93,7 +89,7 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     
@@ -106,63 +102,27 @@
     }
 
     #showroom::before {
-        content: '';
         width: 400px;
-        aspect-ratio: 1;
-        position: absolute;
         top: 6%;
         left: -3%;
-        z-index: -1;
-        background-image: url(../img/showroom\ 나뭇잎.png);
-        background-repeat: no-repeat;
-        background-size: contain;
         transform: rotate(80deg);
     }
 
     #showroom::after {
-        content: '';
-        width: 200px;
-        aspect-ratio: 1;
-        position: absolute;
-        bottom: -1%;
-        right: 3%;
-        z-index: -1;
-        background-image: url(../img/showroom\ 나뭇잎.png);
-        background-repeat: no-repeat;
-        background-size: contain;
+        width: 250px;
+        bottom: -2%;
+        right: -4%;
         transform: rotate(190deg);
     }
 
     .showroom-bamgasi-inform::after {
-        content: '';
-        width: 300px;
-        height: 1px;
-        background: #000;
-        display: block;
-        position: absolute;
         left: calc(44% + 1.5px);
-        transform: rotate(270deg);
-        top: 34%;
-        margin-left: 50px;
+        top: 45%;
     }
 
     .showroom-garage-inform::after {
-        content: '';
-        width: 300px;
-        height: 1px;
-        background: #000;
-        display: block;
-        position: absolute;
         right: 44%;
-        transform: rotate(270deg);
-        top: calc(34% + -1px);
-        margin-right: 50px;
-    }
-
-    #with-furniture {
-        background-size: cover;
-        background-position: 100% 20%;
-        /* 반응형 길이 수정 */
+        top: calc(43% + -1px);
     }
 
     .with-furniture-icons img {
@@ -179,19 +139,29 @@
     }
 
     .footer-container {
-        height: 180px;
         justify-content: space-between;
     }
 
-    
+  
+}
 
-}    
-    
+@media screen and (max-width: 900px) {
+    #with-furniture { 
+        background-size: 100%;
+        background-size: cover;
+    }
+}
 
 
+@media screen and (max-width: 850px) {
+    .showroom-bamgasi-inform::after,
+    .showroom-bamgasi-inform::before,
+    .showroom-garage-inform::after,
+    .showroom-garage-inform::before {
+        display: none;
+    }
 
-
-
+}
 
 
 @media screen and (max-width: 768px) {
@@ -274,11 +244,6 @@
         display: none;
     }
 
-    .brand-explain {
-        gap: 60px;
-        width: 100%;
-    }
-
     h3 {
         font-size: 24px;
     }
@@ -298,33 +263,28 @@
         width: 100%;
     }
 
+    #showroom {
+        padding: 60px 16px;
+    }
+    
+    .showroom-bamgasi-inform, 
+    .showroom-garage-inform {
+        height: 250px;
+    }
+
     #showroom::before {
-        content: '';
-        width: 250px;
-        aspect-ratio: 1;
-        position: absolute;
-        top: 6%;
-        left: -3%;
+        width: 300px;
+        top: 3%;
+        left: 5%;
         z-index: -1;
-        background-image: url(../img/showroom\ 나뭇잎.png);
-        background-repeat: no-repeat;
-        background-size: contain;
         transform: rotate(80deg);
     }
 
     #showroom::after {
-        content: '';
         width: 200px;
-        aspect-ratio: 1;
-        position: absolute;
-        bottom: 18%;
-        /* left: -100px; */
-        right: 5%;
-        /* 이미지 수정 */
+        bottom: 210px;
+        right: 4%;
         z-index: -1;
-        background-image: url(../img/showroom\ 나뭇잎.png);
-        background-repeat: no-repeat;
-        background-size: contain;
         transform: rotate(200deg);
     }
 
@@ -336,31 +296,27 @@
         flex-direction: column-reverse;
     }
 
-    .showroom-bamgasi-inform::after,
-    .showroom-bamgasi-inform::before,
-    .showroom-garage-inform::after,
-    .showroom-garage-inform::before {
-        display: none;
-    }
-
     .explain-showroom figure {
         min-width: 300px;
     }
 
     .showroom-bamgasi-inform,
     .showroom-garage-inform {
-        height: 300px;
+       text-align: center;
+       align-items: flex-start;
     }
 
-
-    /* 여기부터!!! */
+    .bamgasi,
+    .more-view {
+        text-align: center;
+    }
     
     .mobile-header-menubar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding-left: 56px;
-        padding-top: 56px;
+        padding-top: 90px;
         height: 100vh;
         width: 100%;
         background-color: var(--accent-color);
@@ -386,6 +342,15 @@
     .mobile-header-menubar a:hover {
         color: #8a8989;
     }
+    
+    .mobile-header-menubar .mobile-login {
+        width: 200px;
+        height: 35px;
+    }
+    
+    .mobile-header-menubar .mobile-login a {
+        font-size: 14px;
+    }
 
     .mobile-header-close {
         width: 24px;
@@ -399,6 +364,15 @@
 
     .mobile-header-close:hover {
         cursor: pointer;
+    }
+
+    hr {
+        width: 250px;
+        height: 1px;
+        border: 0;
+        background-color: rgb(130, 127, 127);
+        margin-left: 0;
+        margin-bottom: 40px;
     }
 
     .footer-customer-center {
@@ -426,9 +400,30 @@
     .brand-detail-explain::before {
         display: none;
     }
-        
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-id-container,
+    .footer-logo {
+        width: 100%;
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .footer-bottom {
+        display: none;
+    }
         
     }
+
 
   @media screen and (max-width: 360px) {
 
@@ -438,10 +433,6 @@
         right: 3%;
     }
 
-/* 
-    .brand-explain {
-        padding: 60px 0;
-    } */
 
   }
 
@@ -450,11 +441,3 @@
   /*호버넣기 
   about us  이미지 더 찾기 0
    */
-
-   /* about us부분 작아질 때 글씨내려가는거
-   br 에 class줘서 display none-반응형때 block하기 */
-
-   /* 헤더 햄버거 내려오는거하기 */
-
-   /* showroom부분 가운데 정렬하기
-   more - div?q박스에 text aline, 나뭇잎정리 */
