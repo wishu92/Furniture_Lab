@@ -159,12 +159,12 @@ h1 {
     flex-direction: column;
 
     align-items: center;
-    color: #003331;
+    color: var(--accent-color);
 }
 
 h2 {
     font-size: 38px;
-    color: #003331;
+    color: var(--accent-color);
 }
 
 .sub-title {
