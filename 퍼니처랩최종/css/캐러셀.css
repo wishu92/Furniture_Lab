@@ -18,8 +18,11 @@
     flex: 1 0 25%; /* 기본적으로 4개를 표시 */
     padding: 10px;
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
+
+    width: 290px;
     list-style: none;
+    text-align: center;
 
 }
 
