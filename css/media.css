@@ -311,6 +311,9 @@
         text-align: center;
     }
     
+
+    /* header 추가 창 */
+    
     .mobile-header-menubar {
         display: flex;
         flex-direction: column;
@@ -437,7 +440,3 @@
   }
 
 
-
-  /*호버넣기 
-  about us  이미지 더 찾기 0
-   */

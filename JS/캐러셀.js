@@ -73,7 +73,7 @@ function goToPrev() {
 }
 
 function goToIndex(index) {
-    // 특정 슬라이드로 이동하는 함수입니다.
+    // 특정 슬라이드로 이동하는 함수입니다.s
     if (isTransitioning) return; // 트랜지션 중일 때는 함수를 종료합니다.
     currentIndex = index + 1; // 클릭된 점(dot) 인덱스를 기반으로 현재 슬라이드 인덱스를 설정합니다.
     carousel.style.transition = "transform 0.5s ease"; // 트랜지션 효과를 추가합니다.

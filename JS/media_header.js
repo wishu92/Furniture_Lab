@@ -5,6 +5,9 @@ const menuBar = document.querySelector(".mobile-header-menubar");
 const closeBtn = document.querySelector(".mobile-header-close");
 const fixed = document.querySelector(".fixed");
 
+
+mobileHeaderOpen()
+
 toggleBtn.addEventListener("click", mobileHeaderOpen);
 closeBtn.addEventListener("click", mobileHeaderClose);
 const mainBlock = document.querySelector(".web-main");
