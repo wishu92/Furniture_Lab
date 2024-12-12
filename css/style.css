@@ -175,12 +175,13 @@ h2 {
 .brand-explain {
     max-width: 1200px;
     margin: 0 auto;
+    /* height: 100vh; */
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    gap: 60px;
+    gap: 100px;
 }
 
 .brand-explain-content {
@@ -213,7 +214,7 @@ h2 {
     width: 2px;
     background-color: var(--accent-color);
     position: absolute;
-    top: 0;
+    top: -10px;
     left: -2%;
 }
 
@@ -265,19 +266,6 @@ h3 {
     justify-content: space-evenly;
     padding: 60px 0;
 }
-
-    /* flex: 1 1 0;
-    
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-    flex-basis 값을 0 으로 설정하여 기본 넓이를 없게하면 동일한 크기 자식요소를 만들 수 있다. */
-
-/* .best-seller button {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-} */
 
 .carousel-item {
     display: flex;
@@ -668,37 +656,3 @@ h5 {
     font-size: 12px;
 }
 
-
-
-
-
-/* .advantages-motto-fade-slides, 
-.content {
-    width: 100%;
-    height: 338px;
-    position: relative;
-  }
-
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    transition: 1s;
-    color: #fff;
-    font-size: 48px;
-    box-sizing: border-box;
-  }
-
-  .showing {
-    opacity: 1;
-    z-index: 99;
-  }
-
-  .fade-slides > img {
-    width: 100%;
-    height: 100%;
-  } */
