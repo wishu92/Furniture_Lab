@@ -149,9 +149,8 @@ h1 {
 
 .about {
     background-color: #f2f4ef;
-    padding: 80px 32px; 
+    padding: 120px 32px; 
 }
-
 
 
 .section-title {
@@ -176,6 +175,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     /* height: 100vh; */
+    padding-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -254,17 +254,16 @@ h3 {
     display: none;
 }
 
-
 #our-best-seller {
     max-width: 1200px;
-    height: 100vh;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 60px 0;
+
+    padding: 120px 0;
+    gap: 100px;
 }
 
 .carousel-item {
