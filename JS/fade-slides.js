@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .advantages-motto-fade-slides {
-      width: 800px;
-      height: 538px;
-      position: relative;
-    }
-
-    .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 800px;
-      height: 538px;
-      opacity: 0;
-      z-index: 1;
-      transition: 1s;
-      color: #fff;
-      font-size: 48px;
-      box-sizing: border-box;
-    }
-
-    .showing {
-      opacity: 1;
-      z-index: 99;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="fade-slides content fade to-left">
-    <img class="slide showing" src="img/aboutus.png" alt="">
-    <img class="slide" src="img/aboutus2.png" alt="">
-    <img class="slide" src="./img/aboutus3.png" alt="">
-    <img class="slide" src="./img/aboutus4.png" alt="">
-    <!-- 사진 3개 페이드인으로 들어갈거 -->
-  </div>
-
-  <script>
-    let slides = document.querySelectorAll(".fade-slides .slide");
+let slides = document.querySelectorAll(".fade-slides .slide");
     let currentSlide = 0;
     let slideInterval = setInterval(nextSlide, 2000);
     function nextSlide() {
@@ -60,9 +15,3 @@
       slides[currentSlide].className = " slide showing";
       // slides[0.33333]의 클래스 네임에 slide와 showing 을 추가함
     }
-
-
-  </script>
-</body>
-
-</html>
