@@ -248,19 +248,27 @@
         font-size: 24px;
     }
 
+    .aboutus-title-spacing {
+        display: none;
+    }
+
+    .brand-detail-explain {
+        margin-left: 0;
+    }
+
     .brand-explain-content {
-        flex-direction: column;
-        width: 100%;
+        text-align: center;
     }
 
     .brand-explain {
         padding: 60px 30px;
         width: 100%;
         box-sizing: border-box;
+        gap: 60px;
     }
 
-    .brand-explain-content figure {
-        width: 100%;
+    .brand-detail-explain::before {
+        display: none;
     }
 
     #showroom {
@@ -391,18 +399,10 @@
         padding: 0;
         margin: 0;
     }
-
-    .aboutus-title-spacing {
-        display: none;
-    }
     
     .spacing {
         display: block;
     }   
-        
-    .brand-detail-explain::before {
-        display: none;
-    }
 
     .footer-main {
         flex-direction: column;

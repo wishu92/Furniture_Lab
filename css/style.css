@@ -188,8 +188,7 @@ h2 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     gap: 30px;
 }
 
